@@ -8,3 +8,12 @@ Green Alga=
 ### lib.lua ###
 
  with =
+
+### sea_grass.lua ###
+
+Sea Grass=
+
+### sea_strawberry.lua ###
+
+Sea Strawberry=
+Sea Strawberry Stem=

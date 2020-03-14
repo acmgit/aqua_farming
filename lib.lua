@@ -108,14 +108,6 @@ function aqua_farming.register_plant(node_def)
     next_abm = "aqua_farming:" .. basename .. "_with_" .. node_def.nodename .. "_1"
     aqua_farming.register_abm(abm_name, next_abm, node_def.delay, node_def.chance)
 
-    minetest.register_craft({
-            output = "aqua_farming:" .. basename .. "_with_" .. node_def.nodename,
-            recipe = {
-                      {node_def.basenode, "aqua_farming:" .. node_def.nodename .. "_item"},
-                      },
-    })
-
-
     for step = 1, node_def.steps - 1  do
 
         minetest.register_node("aqua_farming:" .. basename .. "_with_" .. node_def.nodename .. "_" .. step,{

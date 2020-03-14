@@ -35,5 +35,7 @@ aqua_farming.S = S
 
 dofile(aqua_farming.modpath .. "/lib.lua")
 dofile(aqua_farming.modpath .. "/alga.lua")
+dofile(aqua_farming.modpath .. "/sea_strawberry.lua")
+dofile(aqua_farming.modpath .. "/sea_grass.lua")
 
 aqua_farming.report(" successfully loaded.")
