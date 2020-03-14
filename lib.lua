@@ -184,6 +184,7 @@ function aqua_farming.get_nodename(nodename)
 end -- get_nodename
 
 function aqua_farming.report(text)
+    print("[MOD] aqua_farming: " .. text)
     minetest.log("info", "[MOD] aqua_farming: " .. text)
 
 end

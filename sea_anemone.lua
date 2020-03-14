@@ -1,11 +1,11 @@
 local S = aqua_farming.S
 
 local step = 5
-local light = 4
-local del = 6
-local chan = 10
-local name = "sea_grass"
-local desc = S("Sea Grass")
+local light = 8
+local del = 8
+local chan = 5
+local name = "sea_anemone"
+local desc = S("Sea Anemone")
 
 local def
 def = {
@@ -51,8 +51,8 @@ def = {
                             chance = chan,
                         }, -- silver_sand
 
-        dirt =          {
-                            basenode = "default:dirt",
+        gravel =   {
+                            basenode = "default:gravel",
                             nodename = name,
                             description = desc,
                             steps = step,
@@ -63,7 +63,8 @@ def = {
                             },
                             delay = del,
                             chance = chan,
-                        }, -- dirt
+                        }, -- gravel
+
     }
 
 local basename
@@ -86,6 +87,7 @@ minetest.register_craftitem("aqua_farming:" .. name .. "_item", {
         description = desc,
         groups = {food = 1, food_vegan = 1},
         inventory_image = "aqua_farming_" .. name .. "_item.png",
+        on_use = minetest.item_eat(5),
 })
 
 dofile(aqua_farming.modpath .. "/mapgen_" .. name .. ".lua")

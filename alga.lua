@@ -4,17 +4,19 @@ local step = 6
 local light = 10
 local del = 10
 local chan = 10
+local name = "alga"
+local desc = S("Green Alga")
 
 local def
 def = {
         sand =          {
                             basenode = "default:sand",
-                            nodename = "alga",
-                            description = S("Green Alga"),
+                            nodename = name,
+                            description = desc,
                             steps = step,
                             min_light = light,
                             drop = {items = {
-                                            {items = {"aqua_farming:alga_item"}}
+                                            {items = {"aqua_farming:" .. name .. "_item"}}
                                     },
                             },
                             delay = del,
@@ -23,12 +25,12 @@ def = {
 
         desert_sand =   {
                             basenode = "default:desert_sand",
-                            nodename = "alga",
-                            description = S("Green Alga"),
+                            nodename = name,
+                            description = desc,
                             steps = step,
                             min_light = light,
                             drop = {items = {
-                                            {items = {"aqua_farming:alga_item"}}
+                                            {items = {"aqua_farming:" .. name .. "_item"}}
                                     },
                             },
                             delay = del,
@@ -37,12 +39,12 @@ def = {
 
         silver_sand =   {
                             basenode = "default:silver_sand",
-                            nodename = "alga",
-                            description = S("Green Alga"),
+                            nodename = name,
+                            description = desc,
                             steps = step,
                             min_light = light,
                             drop = {items = {
-                                            {items = {"aqua_farming:alga_item"}}
+                                            {items = {"aqua_farming:" .. name .. "_item"}}
                                     },
                             },
                             delay = del,
@@ -51,12 +53,12 @@ def = {
 
         dirt =          {
                             basenode = "default:dirt",
-                            nodename = "alga",
-                            description = S("Green Alga"),
+                            nodename = name,
+                            description = desc,
                             steps = step,
                             min_light = light,
                             drop = {items = {
-                                            {items = {"aqua_farming:alga_item"}}
+                                            {items = {"aqua_farming:" .. name .. "_item"}}
                                     },
                             },
                             delay = del,
@@ -80,13 +82,13 @@ for _,value in pairs(def) do
 
 end
 
-minetest.register_craftitem("aqua_farming:alga_item", {
-        description = S("Green Alga"),
+minetest.register_craftitem("aqua_farming:" .. name .. "_item", {
+        description = desc,
         groups = {food = 1, food_vegan = 1},
-        inventory_image = "aqua_farming_alga_item.png",
+        inventory_image = "aqua_farming_" .. name .. "_item.png",
         on_use = minetest.item_eat(1),
 })
 
-dofile(aqua_farming.modpath .. "/mapgen_alga.lua")
+dofile(aqua_farming.modpath .. "/mapgen_" .. name .. ".lua")
 
-aqua_farming.report(" module alga.lua loaded.")
+aqua_farming.report(" module " .. name .. ".lua loaded.")

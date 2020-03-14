@@ -1,5 +1,8 @@
 -- Green Alga
 
+local step = 6
+local name = "alga"
+
 minetest.register_decoration({
     deco_type = "simple",
     place_on = {"default:sand"},
@@ -21,7 +24,7 @@ minetest.register_decoration({
     y_max = -2,
     y_min = -8,
     flags = "force_placement",
-    decoration = {"aqua_farming:sand_with_alga_6"},
+    decoration = {"aqua_farming:sand_with_" .. name .. "_" .. step},
 })
 
 minetest.register_decoration({
@@ -45,7 +48,7 @@ minetest.register_decoration({
     y_max = -2,
     y_min = -8,
     flags = "force_placement",
-    decoration = {"aqua_farming:dirt_with_alga_6"},
+    decoration = {"aqua_farming:dirt_with_" .. name .. "_" .. step},
 })
 
 
@@ -70,7 +73,7 @@ minetest.register_decoration({
     y_max = -2,
     y_min = -8,
     flags = "force_placement",
-    decoration = {"aqua_farming:desert_sand_with_alga_6"},
+    decoration = {"aqua_farming:desert_sand_with_" .. name .. "_" .. step},
 })
 
 minetest.register_decoration({
@@ -94,5 +97,5 @@ minetest.register_decoration({
     y_max = -2,
     y_min = -8,
     flags = "force_placement",
-    decoration = {"aqua_farming:sivler_sand_with_alga_6"},
+    decoration = {"aqua_farming:sivler_sand_with_" .. name .. "_" .. step},
 })

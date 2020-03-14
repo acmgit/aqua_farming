@@ -9,11 +9,20 @@ Green Alga=Grüne Alge
 
  with = mit 
 
+### sea_anemone.lua ###
+
+Sea Anemone=Seeanemone
+
 ### sea_grass.lua ###
 
 Sea Grass=Meergras
 
 ### sea_strawberry.lua ###
 
-Sea Strawberry=Meer Erdbeeren
-Sea Strawberry Stem=Meer Erdbeerenstiel
+ Stem=Stiel
+Sea Strawberry=Meeres Erdbeeren
+
+
+##### not used anymore #####
+
+Sea Strawberry Stem=Meeres Erdbeerstiel

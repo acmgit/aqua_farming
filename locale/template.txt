@@ -9,11 +9,15 @@ Green Alga=
 
  with =
 
+### sea_anemone.lua ###
+
+Sea Anemone=
+
 ### sea_grass.lua ###
 
 Sea Grass=
 
 ### sea_strawberry.lua ###
 
+ Stem=
 Sea Strawberry=
-Sea Strawberry Stem=

@@ -1,12 +1,35 @@
 # Aqua Farming
 A mod for minetest to farm under water.
 
+![Screenshot 1](textures/aqua_farming_screenshot.jpg)
+
 ## Description
 
 Under water is sometimes a little boring. Granted, since minetest 5.x at least corals have been added, but how would it be to have a whole garden under water that you can even plant yourself?
 
 This mod gives you the possibility to plant and harvest even under water. The special thing about it is that these plants also only thrive under water.
 
+
+## Sea alga
+
+The sea alga is a simple plant, which you can find next to coralreefs. The plant likes warm water, so you can find it only in Desert-, Savana- or Rainforestoceans.
+The plant is eatable.
+
+## Sea strawberry
+
+The sea strawberry is a plant, which prefers warm and nutrient-rich soil. So you can find it like the Sea alga at coral-reefs. 
+The fruits of the sea strawberry are delicious.
+
+## Sea grass
+
+Sea grass is like kelp and you can find it everywhere. It grows often next to kelp. Sea grass isn't eatable in it's raw state, but maybe you find some recipes
+for this grass. It' decorative.
+
+## Sea anemone
+
+The Sea anemone is a carnivorus seaplant. It grows on on barren ground and in cold water, so the plant must obtain its nutrients in a different way. It 'eats' plankton, very small crabs and small water insects. The plant itself is eatable and some people say that the plant has an healing effect.
+
+## 
 ## API
 You can define and register your own plants and let them growing.
 
