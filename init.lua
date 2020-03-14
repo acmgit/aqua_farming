@@ -38,5 +38,6 @@ dofile(aqua_farming.modpath .. "/alga.lua")
 dofile(aqua_farming.modpath .. "/sea_strawberry.lua")
 dofile(aqua_farming.modpath .. "/sea_grass.lua")
 dofile(aqua_farming.modpath .. "/sea_anemone.lua")
+dofile(aqua_farming.modpath .. "/support_mods.lua")
 
 aqua_farming.report(" successfully loaded.")
