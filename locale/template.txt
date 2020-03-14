@@ -1,0 +1,10 @@
+# textdomain: aqua_farming
+
+
+### alga.lua ###
+
+Green Alga=
+
+### lib.lua ###
+
+ with =
