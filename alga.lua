@@ -71,4 +71,6 @@ minetest.register_craftitem("aqua_farming:alga_item", {
         on_use = minetest.item_eat(1),
 })
 
+dofile(aqua_farming.modpath .. "/mapgen_alga.lua")
+
 aqua_farming.report(" module alga.lua loaded.")
