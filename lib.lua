@@ -121,7 +121,7 @@ function aqua_farming.register_plant(node_def)
                               tileable_vertical = false}
                             },
             inventory_image = "aqua_farming_" .. node_def.nodename .. "_" .. step .. ".png",
-            groups = {snappy = 3, growing = 1, attached_node = 1, plant = 1, dig_immediate = 1},
+            groups = {not_in_creative_inventory=1, snappy = 3, growing = 1, attached_node = 1, plant = 1, dig_immediate = 1},
             sounds = default.node_sound_leaves_defaults(),
             drop = {},
             selection_box = {
