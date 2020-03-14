@@ -3,7 +3,7 @@
       -- crops
       {'aqua_farming:alga_items',                     1,              nil,                        nil,    nil,    nil},
       {'aqua_farming:sea_strawberry_item',            3,              nil,                        nil,    nil,    nil},
-      {'cucina_vegana:sea_anemone_item',              3,              nil,                        nil,    1,      nil},
+      {'aqua_farming:sea_anemone_item',              3,              nil,                        nil,    1,      nil},
 
     }
     
