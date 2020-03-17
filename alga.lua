@@ -7,80 +7,27 @@ local chan = 10
 local name = "alga"
 local desc = S("Green Alga")
 
-local def
-def = {
-        sand =          {
-                            basenode = "default:sand",
-                            nodename = name,
-                            description = desc,
-                            steps = step,
-                            min_light = light,
-                            drop = {items = {
-                                            {items = {"aqua_farming:" .. name .. "_item"}}
+local def = {
+                basenode = "default:sand",
+                nodename = name,
+                description = desc,
+                steps = step,
+                min_light = light,
+                delay = del,
+                chance = chan,
+                drop = {items = {
+                                    {
+                                        items = {"aqua_farming:" .. name .. "_item 1"},
+                                        items = {"aqua_farming:" .. name .. "_seed 2"},
                                     },
-                            },
-                            delay = del,
-                            chance = chan,
-                        }, -- sand
 
-        desert_sand =   {
-                            basenode = "default:desert_sand",
-                            nodename = name,
-                            description = desc,
-                            steps = step,
-                            min_light = light,
-                            drop = {items = {
-                                            {items = {"aqua_farming:" .. name .. "_item"}}
-                                    },
-                            },
-                            delay = del,
-                            chance = chan,
-                        }, -- desert_sand
+                                }, -- items
 
-        silver_sand =   {
-                            basenode = "default:silver_sand",
-                            nodename = name,
-                            description = desc,
-                            steps = step,
-                            min_light = light,
-                            drop = {items = {
-                                            {items = {"aqua_farming:" .. name .. "_item"}}
-                                    },
-                            },
-                            delay = del,
-                            chance = chan,
-                        }, -- silver_sand
+                        }, -- drop
 
-        dirt =          {
-                            basenode = "default:dirt",
-                            nodename = name,
-                            description = desc,
-                            steps = step,
-                            min_light = light,
-                            drop = {items = {
-                                            {items = {"aqua_farming:" .. name .. "_item"}}
-                                    },
-                            },
-                            delay = del,
-                            chance = chan,
-                        }, -- dirt
-    }
+            } -- def
 
-local basename
-
-for _,value in pairs(def) do
-    aqua_farming.register_plant(value)
-
-    basename = aqua_farming.get_nodename(value.basenode)
-
-    minetest.register_craft({
-        output = "aqua_farming:" .. basename .. "_with_" .. value.nodename,
-        recipe = {
-                      {value.basenode, "aqua_farming:" .. value.nodename .. "_item"},
-                },
-    })
-
-end
+aqua_farming.register_plant(def)
 
 minetest.register_craftitem("aqua_farming:" .. name .. "_item", {
         description = desc,

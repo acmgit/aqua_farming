@@ -27,7 +27,7 @@ minetest.register_decoration({
     y_max = -5,
     y_min = -10,
     flags = "force_placement",
-    decoration = "aqua_farming:sand_with_".. name .. "_" .. step,
+    decoration = "aqua_farming:" .. name .. "_" .. step,
     param2 = 48,
     param2_max = 96,
 })
@@ -56,7 +56,7 @@ minetest.register_decoration({
     y_max = -5,
     y_min = -10,
     flags = "force_placement",
-    decoration = "aqua_farming:silver_sand_".. name .. "_" .. step,
+    decoration = "aqua_farming:" .. name .. "_" .. step,
     param2 = 48,
     param2_max = 96,
 })
@@ -85,7 +85,7 @@ minetest.register_decoration({
     y_max = -5,
     y_min = -10,
     flags = "force_placement",
-    decoration = "aqua_farming:gravel_".. name .. "_" .. step,
+    decoration = "aqua_farming:" .. name .. "_" .. step,
     param2 = 48,
     param2_max = 96,
 })
@@ -114,7 +114,7 @@ minetest.register_decoration({
     y_max = -5,
     y_min = -10,
     flags = "force_placement",
-    decoration = "aqua_farming:desert_sand_".. name .. "_" .. step,
+    decoration = "aqua_farming:" .. name .. "_" .. step,
     param2 = 48,
     param2_max = 96,
 })

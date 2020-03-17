@@ -15,7 +15,7 @@
 aqua_farming = {}
 
 aqua_farming.ver = 1
-aqua_farming.rev = 0
+aqua_farming.rev = 1
 
 aqua_farming.modpath = minetest.get_modpath(minetest.get_current_modname())
 aqua_farming.modname = minetest.get_current_modname()
@@ -35,8 +35,8 @@ aqua_farming.S = S
 
 dofile(aqua_farming.modpath .. "/lib.lua")
 dofile(aqua_farming.modpath .. "/alga.lua")
-dofile(aqua_farming.modpath .. "/sea_strawberry.lua")
-dofile(aqua_farming.modpath .. "/sea_grass.lua")
+--dofile(aqua_farming.modpath .. "/sea_strawberry.lua")
+--dofile(aqua_farming.modpath .. "/sea_grass.lua")
 dofile(aqua_farming.modpath .. "/sea_anemone.lua")
 dofile(aqua_farming.modpath .. "/support_mods.lua")
 
