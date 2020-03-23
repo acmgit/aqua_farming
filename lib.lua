@@ -180,7 +180,7 @@ function aqua_farming.register_plant(node_def)
                          {name = modname .. "_" .. nodename .. "_" .. node_def.steps .. ".png",
                           tileable_vertical = false}
                         },
-        groups = {snappy = 3, attached_node = 1, plant = 1, dig_immediate = 1},
+        groups = {not_in_creative_inventory=1, snappy = 3, attached_node = 1, plant = 1, dig_immediate = 1},
         sounds = default.node_sound_leaves_defaults(),
         drop = node_def.drop,
         selection_box = {
@@ -207,7 +207,7 @@ function aqua_farming.register_plant(node_def)
                          {name = modname .. "_" .. nodename .. "_" .. node_def.steps .. ".png",
                           tileable_vertical = false}
                         },
-        groups = {snappy = 3, attached_node = 1, plant = 1, dig_immediate = 1},
+        groups = {not_in_creative_inventory=1, snappy = 3, attached_node = 1, plant = 1, dig_immediate = 1},
         sounds = default.node_sound_leaves_defaults(),
         drop = node_def.drop,
         selection_box = {
