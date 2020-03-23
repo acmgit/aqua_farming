@@ -1,7 +1,7 @@
 # Aqua Farming
 A mod for minetest to farm under water.
 
-![Screenshot 1](textures/aqua_farming_screenshot.jpg)
+![Screenshot 1](textures/aqua_farming_screenshot_1.jpg)
 
 ## Description
 
@@ -9,6 +9,9 @@ Under water is sometimes a little boring. Granted, since minetest 5.x at least c
 
 This mod gives you the possibility to plant and harvest even under water. The special thing about it is that these plants also only thrive under water.
 
+![Screenshot 1](textures/aqua_farming_screenshot_2.jpg)
+
+Now you can create your own garden under water. The plants drops now itself as item and seed's. With this seeds you plant new plants under water. But the plants needs a special substrate: water_soil. So for the first you have to craft water_soil.
 
 ## Sea alga
 
@@ -51,4 +54,6 @@ GPL 3.0
 default
 
 ## optional Depends
-
+hunger_ng
+hunger
+diet
