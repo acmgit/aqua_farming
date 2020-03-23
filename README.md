@@ -54,6 +54,6 @@ GPL 3.0
 default
 
 ## optional Depends
-hunger_ng
-hunger
+hunger_ng<br>
+hunger<br>
 diet
