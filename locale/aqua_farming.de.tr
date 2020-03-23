@@ -1,16 +1,21 @@
 # textdomain: aqua_farming
 
-
 ### alga.lua ###
 
 Green Alga=Grüne Alge
 
+### init.lua ###
+
+Water Soil=Wassergartenerde
+
 ### lib.lua ###
 
- with = mit 
+Seeds=Samen
+Wild=Wilde
 
 ### sea_anemone.lua ###
 
+(raw)=(roh)
 Sea Anemone=Seeanemone
 
 ### sea_grass.lua ###
@@ -19,10 +24,4 @@ Sea Grass=Meergras
 
 ### sea_strawberry.lua ###
 
- Stem=Stiel
 Sea Strawberry=Meeres Erdbeeren
-
-
-##### not used anymore #####
-
-Sea Strawberry Stem=Meeres Erdbeerstiel

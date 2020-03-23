@@ -5,12 +5,18 @@
 
 Green Alga=
 
+### init.lua ###
+
+Water Soil=
+
 ### lib.lua ###
 
- with =
+Seeds=
+Wild=
 
 ### sea_anemone.lua ###
 
+(raw)=
 Sea Anemone=
 
 ### sea_grass.lua ###
@@ -19,5 +25,4 @@ Sea Grass=
 
 ### sea_strawberry.lua ###
 
- Stem=
 Sea Strawberry=

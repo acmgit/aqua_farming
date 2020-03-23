@@ -1,7 +1,6 @@
 -- Sea Strawberry
 
-local step = 8
-local name = "sea_strawberry"
+local name = "aqua_farming:sea_strawberry"
 
 minetest.register_decoration({
     deco_type = "simple",
@@ -22,9 +21,9 @@ minetest.register_decoration({
         "rainforest_ocean",
     },
     y_max = -2,
-    y_min = -8,
+    y_min = -30,
     flags = "force_placement",
-    decoration = {"aqua_farming:dry_dirt_with_" .. name .. "_" .. step},
+    decoration = {name .. "_wild"},
 })
 
 minetest.register_decoration({
@@ -46,9 +45,9 @@ minetest.register_decoration({
         "rainforest_ocean",
     },
     y_max = -2,
-    y_min = -8,
+    y_min = -30,
     flags = "force_placement",
-    decoration = {"aqua_farming:dirt_with_" .. name .. "_" .. step},
+    decoration = {name .. "_wild"},
 })
 
 
@@ -71,7 +70,7 @@ minetest.register_decoration({
         "rainforest_ocean",
         },
     y_max = -2,
-    y_min = -8,
+    y_min = -30,
     flags = "force_placement",
-    decoration = {"aqua_farming:dry_dirt_with_" .. name .. "_" .. step},
+    decoration = {name .. "_wild"},
 })

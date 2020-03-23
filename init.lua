@@ -32,11 +32,25 @@ end
 
 aqua_farming.S = S
 
+minetest.register_node("aqua_farming:water_soil", {
+	description = S("Water Soil"),
+	tiles = {minetest.registered_nodes["default:silver_sand"].tiles[1] .. "^aqua_farming_water_soil.png", minetest.registered_nodes["default:silver_sand"].tiles[1]},
+    drop = "default:silver_sand",
+	groups = {crumbly = 3, falling_node = 1, sand = 1},
+	sounds = default.node_sound_sand_defaults(),
+})
+
+minetest.register_craft({
+                            output = "aqua_farming:water_soil 2",
+                            recipe = {
+                                        {"default:gravel", "group:seafood", "group:sand"}
+                                     },
+                         })
 
 dofile(aqua_farming.modpath .. "/lib.lua")
 dofile(aqua_farming.modpath .. "/alga.lua")
---dofile(aqua_farming.modpath .. "/sea_strawberry.lua")
---dofile(aqua_farming.modpath .. "/sea_grass.lua")
+dofile(aqua_farming.modpath .. "/sea_strawberry.lua")
+dofile(aqua_farming.modpath .. "/sea_grass.lua")
 dofile(aqua_farming.modpath .. "/sea_anemone.lua")
 dofile(aqua_farming.modpath .. "/support_mods.lua")
 

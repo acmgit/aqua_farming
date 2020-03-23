@@ -1,7 +1,6 @@
 -- Sea Grass
 
-local step = 5
-local name = "sea_grass"
+local name = "aqua_farming:sea_grass"
 
 minetest.register_decoration({
     deco_type = "simple",
@@ -25,9 +24,9 @@ minetest.register_decoration({
         "sandstone_desert_ocean",
         "cold_desert_ocean"},
     y_max = -5,
-    y_min = -10,
+    y_min = -50,
     flags = "force_placement",
-    decoration = "aqua_farming:sand_with_" .. name .. "_" .. step,
+    decoration = name .. "_wild",
     param2 = 48,
     param2_max = 96,
 })
@@ -54,9 +53,9 @@ minetest.register_decoration({
         "sandstone_desert_ocean",
         "cold_desert_ocean"},
     y_max = -5,
-    y_min = -10,
+    y_min = -50,
     flags = "force_placement",
-    decoration = "aqua_farming:silver_sand_with_" .. name .. "_" .. step,
+    decoration = name .. "_wild",
     param2 = 48,
     param2_max = 96,
 })
@@ -83,9 +82,9 @@ minetest.register_decoration({
         "sandstone_desert_ocean",
         "cold_desert_ocean"},
     y_max = -5,
-    y_min = -10,
+    y_min = -50,
     flags = "force_placement",
-    decoration = "aqua_farming:desert_sand_with_" .. name .. "_" .. step,
+    decoration = name .. "_wild",
     param2 = 48,
     param2_max = 96,
 })
@@ -112,9 +111,9 @@ minetest.register_decoration({
         "sandstone_desert_ocean",
         "cold_desert_ocean"},
     y_max = -5,
-    y_min = -10,
+    y_min = -50,
     flags = "force_placement",
-    decoration = "aqua_farming:dirt_with_" .. name .. "_" .. step,
+    decoration = name .. "_wild",
     param2 = 48,
     param2_max = 96,
 })
