@@ -38,4 +38,13 @@ aqua_farming.register_plant(def)
 
 dofile(aqua_farming.modpath .. "/mapgen_" .. name:split(":")[2] .. ".lua")
 
+if(signs_bot) then
+    local fs = signs_bot.register_farming_seed
+    local fc = signs_bot.register_farming_crop
+    
+    fs(name .. "_seed", name .. "_1")
+	fc(name .. "_" .. step, name .. "_item", name .. "_seed")
+
+end
+
 aqua_farming.report(" module " .. name .. ".lua loaded.")
