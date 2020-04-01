@@ -68,7 +68,7 @@ end -- function aqua_farming.register_abm
 
 function aqua_farming.plant_seed(node_def, pointed_thing)
     if(pointed_thing.type == "node") then
-        local node = minetest.get_node(minetest.get_pointed_thing_position(pointed_thing.under))
+        local node = minetest.get_node(minetest.get_pointed_thing_position(pointed_thing, false)) -- pointed_thing.under
         if(node.name == "aqua_farming:water_soil") then
             minetest.set_node(pointed_thing.under, {name = node_def.nodename .. "_seed"})
             return true
