@@ -26,11 +26,15 @@ The fruits of the sea strawberry are delicious.
 ## Sea grass
 
 Sea grass is like kelp and you can find it everywhere. It grows often next to kelp. Sea grass isn't eatable in it's raw state, but maybe you find some recipes
-for this grass. It' decorative.
+for this grass. It' decorative. I heard it rumble, that the sea grass is used to extract salt and green dye, when you roast it. 
 
 ## Sea anemone
 
 The Sea anemone is a carnivorus seaplant. It grows on on barren ground and in cold water, so the plant must obtain its nutrients in a different way. It 'eats' plankton, very small crabs and small water insects. The plant itself is eatable and some people say that the plant has an healing effect.
+
+## Sea Cucumber
+
+The Sea cucumber lifes like the Sea anemone in cooler water, but not to cold, like ice. You can find sea cucumber often next from the sea anemone. You can eat the sea cucumber raw, it satiates a lot. The sea cucumber is often a eatable decoration in main courses.
 
 ## 
 ## API

@@ -19,6 +19,10 @@ Wild=
 (raw)=
 Sea Anemone=
 
+### sea_cucumber.lua ###
+
+Sea Cucumber=
+
 ### sea_grass.lua ###
 
 Sea Grass=

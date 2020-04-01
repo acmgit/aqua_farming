@@ -1,10 +1,11 @@
     local af_items = {
       --                Name                          Saturation      Replace with                Poison  Heal    Sound
       -- crops
-      {'aqua_farming:alga_items',                     1,              nil,                        nil,    nil,    nil},
-      {'aqua_farming:sea_strawberry_item',            3,              nil,                        nil,    nil,    nil},
-      {'aqua_farming:sea_anemone_item',              3,              nil,                        nil,    1,      nil},
-
+      {'aqua_farming:alga_items',                      1,              nil,                        nil,    nil,     nil},
+      {'aqua_farming:sea_strawberry_item',             3,              nil,                        nil,    nil,     nil},
+      {'aqua_farming:sea_anemone_item',                3,              nil,                        nil,    1,       nil},
+      {'aqua_farming:sea_cucumber_item',                4,              nil,                        nil,    nil,     nil},
+        
     }
     
 

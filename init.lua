@@ -47,11 +47,27 @@ minetest.register_craft({
                                      },
                          })
 
+aqua_farming.plants = {   
+                    "alga",
+                    "sea_strawberry",
+                    "sea_grass",
+                    "sea_anemone",
+                    "sea_cucumber",
+                }
+
 dofile(aqua_farming.modpath .. "/lib.lua")
-dofile(aqua_farming.modpath .. "/alga.lua")
+
+for _,name in pairs(aqua_farming.plants) do
+    dofile(aqua_farming.modpath .. "/" .. name .. ".lua")
+
+end
+
+--[[
 dofile(aqua_farming.modpath .. "/sea_strawberry.lua")
 dofile(aqua_farming.modpath .. "/sea_grass.lua")
 dofile(aqua_farming.modpath .. "/sea_anemone.lua")
+]]--
+
 dofile(aqua_farming.modpath .. "/support_mods.lua")
 
 aqua_farming.report(" successfully loaded.")
