@@ -44,7 +44,7 @@ minetest.register_craftitem("aqua_farming:salt", {
         groups = {food = 1, food_vegan = 1, food_salt = 1},
         inventory_image = "aqua_farming_salt.png",
 })
-                           
+
 minetest.register_craft({
 	type = "cooking",
 	cooktime = 10,
@@ -64,7 +64,7 @@ dofile(aqua_farming.modpath .. "/mapgen_" .. name:split(":")[2] .. ".lua")
 if(signs_bot) then
     local fs = signs_bot.register_farming_seed
     local fc = signs_bot.register_farming_crop
-    
+
     fs(name .. "_seed", name .. "_1")
 	fc(name .. "_" .. step, name .. "_item", name .. "_seed")
 

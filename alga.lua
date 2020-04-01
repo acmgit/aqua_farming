@@ -19,7 +19,7 @@ local def = {
                                         {items = {name .. "_item 1"}},
                                         {items = {name .. "_seed 2"}},
                                         {items = {name .. "_item 2", rarity = 10}},
-                                 
+
                                 },-- items
                         }, -- drop
 
@@ -39,7 +39,7 @@ dofile(aqua_farming.modpath .. "/mapgen_" .. name:split(":")[2] .. ".lua")
 if(signs_bot) then
     local fs = signs_bot.register_farming_seed
     local fc = signs_bot.register_farming_crop
-    
+
     fs(name .. "_seed", name .. "_1")
 	fc(name .. "_" .. step, name .. "_item", name .. "_seed")
 
