@@ -43,4 +43,6 @@ if(signs_bot) then
 
 end
 
+dofile(aqua_farming.modpath .. "/sea_strawberry_recipes.lua")
+
 aqua_farming.report(" module " .. name .. ".lua loaded.")

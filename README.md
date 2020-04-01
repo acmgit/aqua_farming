@@ -60,4 +60,8 @@ default
 ## optional Depends
 hunger_ng<br>
 hunger<br>
-diet
+diet<br>
+signs_bot<br>
+dye<br>
+farming<br>
+bucket<br>
