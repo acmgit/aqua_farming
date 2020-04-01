@@ -68,19 +68,19 @@ end -- function aqua_farming.register_abm
 
 function aqua_farming.plant_seed(node_def, pointed_thing)
     if(pointed_thing.type == "node") then
-        local node = minetest.get_node(minetest.get_pointed_thing_position(pointed_thing, under))
+        local node = minetest.get_node(minetest.get_pointed_thing_position(pointed_thing.under))
         if(node.name == "aqua_farming:water_soil") then
             minetest.set_node(pointed_thing.under, {name = node_def.nodename .. "_seed"})
             return true
         end -- if(node.name
-            
+
         return false
-        
+
     end -- if(pointed_thing.type
 
 end
 
-function aqua_farming.register_plant(node_def)    
+function aqua_farming.register_plant(node_def)
 
     local modname = node_def.nodename:split(":")[1]
     local nodename = node_def.nodename:split(":")[2]
@@ -114,21 +114,21 @@ function aqua_farming.register_plant(node_def)
             local meta = minetest.get_meta(pos)
             meta:set_int("lightlevel", min_light)
         end,
-   
+
         on_place = function(itemstack, placer, pointed_thing)
             if(aqua_farming.plant_seed(node_def, pointed_thing)) then
                 itemstack:take_item()
                 return itemstack
             end
-                                                                            
+
             return itemstack
         end,
-                                                                             
+
         after_dig_node = function(pos, oldnode, oldmetadata, digger)
                                 minetest.set_node(pos, {name = "aqua_farming:water_soil"})
-                                                                             
+
                         end, -- function
-                                                                            
+
     })
 
     local abm_name, next_abm
@@ -148,7 +148,8 @@ function aqua_farming.register_plant(node_def)
                              {name = modname .. "_" .. nodename .. "_" .. step .. ".png",
                               tileable_vertical = false},
                             },
-            groups = {not_in_creative_inventory=1, snappy = 3, growing = 1, attached_node = 1, plant = 1, dig_immediate = 1},
+            groups = {not_in_creative_inventory=1, snappy = 3, growing = 1,
+                      attached_node = 1, plant = 1, dig_immediate = 1},
             sounds = default.node_sound_leaves_defaults(),
             drop = {},
             selection_box = {
@@ -168,7 +169,7 @@ function aqua_farming.register_plant(node_def)
         aqua_farming.register_abm(abm_name, next_abm, node_def.delay, node_def.chance)
 
     end -- for step
-    
+
     -- Last Plantnode
     minetest.register_node(":" .. modname .. ":" .. nodename .. "_" .. node_def.steps,{
         description = node_def.description .. "_" .. node_def.steps,
@@ -192,10 +193,10 @@ function aqua_farming.register_plant(node_def)
         },
         after_dig_node = function(pos, oldnode, oldmetadata, digger)
                                 minetest.set_node(pos, {name = "aqua_farming:water_soil"})
-                                                                             
+
                         end, -- function
     })
-    
+
     -- Wild Plantnode
     minetest.register_node(":" .. modname .. ":" .. nodename .. "_wild",{
         description = S("Wild") .. " " .. node_def.description,
@@ -219,7 +220,7 @@ function aqua_farming.register_plant(node_def)
         },
         after_dig_node = function(pos, oldnode, oldmetadata, digger)
                                 minetest.set_node(pos, {name = node_def.basenode})
-                                                                             
+
                         end, -- function
     })
 
