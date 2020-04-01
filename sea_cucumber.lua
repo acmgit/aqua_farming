@@ -3,7 +3,7 @@ local S = aqua_farming.S
 local step = 8
 local light = 6
 local del = 9
-local chan = 13
+local chan = 10
 local name = "aqua_farming:sea_cucumber"
 local desc = S("Sea Cucumber")
 
