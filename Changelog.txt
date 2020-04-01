@@ -1,3 +1,4 @@
+Salt added.
 description.txt added.
 Support for Signs_bot added.
 Support for mods hunger, hunger_ng and diet added.

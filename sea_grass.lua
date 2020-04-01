@@ -33,6 +33,32 @@ minetest.register_craftitem(name .. "_item", {
         inventory_image = "aqua_farming_" .. name:split(":")[2] .. "_item.png",
 })
 
+minetest.register_craftitem(name .. "_roasted_item", {
+        description = desc .. " (" .. S("dry") .. ")",
+        groups = {food = 1, food_vegan = 1},
+        inventory_image = "aqua_farming_" .. name:split(":")[2] .. "_roasted_item.png",
+})
+
+minetest.register_craftitem("aqua_farming:salt", {
+        description = S("Sea Salt"),
+        groups = {food = 1, food_vegan = 1, food_salt = 1},
+        inventory_image = "aqua_farming_salt.png",
+})
+                           
+minetest.register_craft({
+	type = "cooking",
+	cooktime = 10,
+	output = name .. "_roasted_item",
+	recipe = name .. "_item",
+})
+
+minetest.register_craft({
+    type = "shapeless",
+    output = "aqua_farming:salt",
+    recipe = {name .. "_roasted_item"},
+    replacements = {{name .. "_roasted_item", "dye:dark_green"}}
+})
+
 dofile(aqua_farming.modpath .. "/mapgen_" .. name:split(":")[2] .. ".lua")
 
 if(signs_bot) then

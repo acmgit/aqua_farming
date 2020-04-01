@@ -1,5 +1,6 @@
 # textdomain: aqua_farming
 
+
 ### alga.lua ###
 
 Green Alga=Grüne Alge
@@ -21,6 +22,8 @@ Sea Anemone=Seeanemone
 ### sea_grass.lua ###
 
 Sea Grass=Meergras
+Sea Salt=Meersalz
+dry=getrocknet
 
 ### sea_strawberry.lua ###
 

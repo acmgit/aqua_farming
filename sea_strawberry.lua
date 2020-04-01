@@ -27,7 +27,7 @@ aqua_farming.register_plant(def)
 
 minetest.register_craftitem(name .. "_item", {
         description = desc,
-        groups = {food = 1, food_vegan = 1, seafood = 1},
+        groups = {food = 1, food_vegan = 1, seafood = 1, food_strawberry = 1},
         inventory_image = "aqua_farming_" .. name:split(":")[2] .. "_item.png",
         on_use = minetest.item_eat(3),
 })
