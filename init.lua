@@ -63,11 +63,6 @@ for _,name in pairs(aqua_farming.plants) do
 
 end
 
---[[
-dofile(aqua_farming.modpath .. "/sea_strawberry.lua")
-dofile(aqua_farming.modpath .. "/sea_grass.lua")
-dofile(aqua_farming.modpath .. "/sea_anemone.lua")
-]]--
 
 dofile(aqua_farming.modpath .. "/support_mods.lua")
 

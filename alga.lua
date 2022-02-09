@@ -36,12 +36,16 @@ minetest.register_craftitem(name .. "_item", {
 
 dofile(aqua_farming.modpath .. "/mapgen_" .. name:split(":")[2] .. ".lua")
 
-if(signs_bot) then
-    local fs = signs_bot.register_farming_seed
-    local fc = signs_bot.register_farming_crop
+if(minetest.get_modpath("signs_bot")) then
 
-    fs(name .. "_seed", name .. "_1")
-	fc(name .. "_" .. step, name .. "_item", name .. "_seed")
+    local fs = signs_bot.register_farming_plant
+    --local ts = signs_bot.register_tree_saplings
+
+    --local fs = signs_bot.register_farming_seed
+    --local fc = signs_bot.register_farming_crop
+
+    fs(name .. "_seed", name .. "_1", name .. "_" .. step)
+	--fc(name .. "_" .. step, name .. "_item", name .. "_seed")
 
 end
 
