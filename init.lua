@@ -54,6 +54,7 @@ aqua_farming.plants = {
                     "sea_grass",
                     "sea_anemone",
                     "sea_cucumber",
+                    "sponge",
                 }
 
 dofile(aqua_farming.modpath .. "/lib.lua")
