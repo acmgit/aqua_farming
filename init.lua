@@ -15,7 +15,7 @@
 aqua_farming = {}
 
 aqua_farming.ver = 1
-aqua_farming.rev = 1
+aqua_farming.rev = 3
 
 aqua_farming.modpath = minetest.get_modpath(minetest.get_current_modname())
 aqua_farming.modname = minetest.get_current_modname()
