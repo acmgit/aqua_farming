@@ -36,6 +36,11 @@ The Sea anemone is a carnivorus seaplant. It grows on on barren ground and in co
 
 The Sea cucumber lifes like the Sea anemone in cooler water, but not to cold, like ice. You can find sea cucumber often next from the sea anemone. You can eat the sea cucumber raw, it satiates a lot. The sea cucumber is often a eatable decoration in main courses.
 
+## Sponge
+
+A Sponge you can find in tropical sea. You can't eat it, but you can use it as decoration. The Sponge grows in a
+depth of -10 since -60 and lives in bigger groups.
+
 ## 
 ## API
 You can define and register your own plants and let them growing.
