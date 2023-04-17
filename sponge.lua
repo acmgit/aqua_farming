@@ -58,7 +58,7 @@ minetest.register_node(name, {
 	on_use = function(itemstack, user, pointed_thing)
 				local username = user:get_player_name()
 				minetest.chat_send_player(username, S("You feel fresh and neat."))
-				minetest.sound_play("aqua_farming_ping", { to_player = username, loop = false,})
+				minetest.sound_play("aqua_farming_water", { to_player = username, loop = false,})
 
 			end
 })
