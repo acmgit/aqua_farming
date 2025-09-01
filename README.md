@@ -11,7 +11,7 @@ This mod gives you the possibility to plant and harvest even under water. The sp
 
 ![Screenshot 1](textures/aqua_farming_screenshot_2.jpg)
 
-Now you can create your own garden under water. The plants drops now itself as item and seed's. With this seeds you plant new plants under water. But the plants needs a special substrate: water_soil. So for the first you have to craft water_soil.
+Now you can create your own garden under water. The plants drops now itself as item and seed's. With this seeds you plant new plants under water. But the plants needs a special substrate: water_soil. So for the first you have to craft water_soil. Important, the sea plants needs 2 blocks of water above to grow.
 
 ## Sea alga
 
